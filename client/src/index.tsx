@@ -11,6 +11,7 @@ import RouteGuard from "./guard/RouteGuard";
 import Login from "./pages/Login/Login";
 import MovieList from "./pages/MovieList/MovieList";
 import MovieDetail from "./pages/MovieDetail/MovieDetail";
+import NotFound from "./pages/NotFound/NotFound";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
@@ -36,6 +37,7 @@ root.render(
               </RouteGuard>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </CombinedProvider>

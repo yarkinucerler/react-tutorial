@@ -1,0 +1,12 @@
+.not-found-warapper {
+  display: flex;
+  row-gap: 64px;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  svg {
+    font-size: 350px;
+  }
+}
