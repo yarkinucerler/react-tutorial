@@ -1,0 +1,28 @@
+.movielist {
+  &-wrapper {
+    width: 100%;
+    row-gap: 64px;
+    column-gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-container {
+    width: 100%;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+    }
+  }
+}

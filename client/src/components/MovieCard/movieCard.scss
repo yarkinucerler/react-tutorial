@@ -1,0 +1,87 @@
+$self: ".card";
+
+.movie-card {
+  height: 100%;
+  max-width: 250px;
+  position: relative;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  figcaption {
+    display: flex;
+    row-gap: 12px;
+    margin-top: 12px;
+    vertical-align: top;
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    strong {
+      color: #111827;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+#{$self + "-tools"} {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 32px);
+  justify-content: space-between;
+}
+
+#{$self + "-badge"} {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  color: #111827;
+  background-color: #f3f4f6;
+}
+
+#{$self + "-favorite"} {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  padding: 8px;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: #f3f4f6;
+
+  &:hover,
+  &.active {
+    svg {
+      fill: #f87171;
+    }
+  }
+
+  svg {
+    fill: #d1d5db;
+  }
+}

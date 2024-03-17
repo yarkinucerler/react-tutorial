@@ -1,0 +1,41 @@
+.movie-detail-wrapper {
+  position: relative;
+
+  .movie-detail-features {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  hr {
+    margin: 32px 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    display: flex;
+    color: #111827;
+    align-items: center;
+
+    &.movie-detaile-summary {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 40px;
+      color: #000000;
+      margin-top: 64px;
+    }
+
+    strong {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

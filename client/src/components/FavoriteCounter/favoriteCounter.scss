@@ -1,0 +1,20 @@
+.favorite-counter-wrapper {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  span {
+    color: #be123c;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  em {
+    font-style: normal;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
